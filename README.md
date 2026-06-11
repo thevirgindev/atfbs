@@ -1,4 +1,5 @@
 # ATFBS — All The Fucking Bin Scrapers
+> Made by [@thevirgindev](https://github.com/thevirgindev)
 
 ```
     █████████   ███████████ ███████████ ███████████   █████████
