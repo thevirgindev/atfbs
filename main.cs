@@ -134,7 +134,7 @@ public class main
     {
         var sep = new string('─', Math.Max(20, term_width() - 1));
         AnsiConsole.MarkupLine($"[bold yellow]{sep}[/]");
-        AnsiConsole.MarkupLine($"[bold yellow]ATFBS v2.0[/]  [grey]all the fucking bin scrapers[/]");
+        AnsiConsole.MarkupLine($"[bold yellow]ATFBS v2.1[/]  [grey]all the fucking bin scrapers[/]  [darkgrey]by @thevirgindev[/]");
         AnsiConsole.MarkupLine($"[bold yellow]{sep}[/]");
         Console.WriteLine();
 
@@ -253,7 +253,7 @@ public class main
 
         var sb = new System.Text.StringBuilder();
         sb.AppendLine($"[bold yellow]{sep}[/]");
-        sb.AppendLine("[bold yellow]ATFBS v2.0[/]  [grey]all the fucking bin scrapers[/]");
+        sb.AppendLine("[bold yellow]ATFBS v2.1[/]  [grey]all the fucking bin scrapers[/]  [darkgrey]by @thevirgindev[/]");
         sb.AppendLine($"[bold yellow]{sep}[/]");
         sb.AppendLine("");
         sb.AppendLine("  [grey]commands:[/]");
@@ -434,7 +434,7 @@ public class main
         var panel = new Panel(layout)
             .Border(BoxBorder.Double)
             .BorderColor(Color.Yellow)
-            .Header("[bold yellow]ATFBS v2.0[/]")
+            .Header("[bold yellow]ATFBS v2.1[/]  [darkgrey]by @thevirgindev[/]")
             .Padding(1, 0);
         AnsiConsole.Write(panel);
     }
@@ -554,7 +554,7 @@ public class main
     private static string about_text() => @"
 ATFBS - All The Fucking Bin Scrapers
 
-A pastebin intelligence tool. Scrapes 11 different
+A pastebin intelligence tool. Scrapes 19 different
 pastebin-style sites, extracts content using per-site
 strategies, and exports to JSON and CSV.
 
@@ -563,7 +563,7 @@ don't know what to do with. Credentials, config files,
 internal IPs, API keys, slack tokens, aws secrets -
 everything ends up in a paste at some point.
 
-ATFBS scrapes recent pastes from 11 known pastebin
+ATFBS scrapes recent pastes from 19 known pastebin
 services and saves them for analysis. Every site gets
 its own URL pattern matcher and content extraction
 strategy. Termbin connects over TCP. Others use HTTP
