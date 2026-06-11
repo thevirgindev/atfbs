@@ -134,7 +134,7 @@ public class main
     {
         var sep = new string('─', Math.Max(20, term_width() - 1));
         AnsiConsole.MarkupLine($"[bold yellow]{sep}[/]");
-        AnsiConsole.MarkupLine($"[bold yellow]ATFBS v2.1[/]  [grey]all the fucking bin scrapers[/]  [darkgrey]by @thevirgindev[/]");
+        AnsiConsole.MarkupLine($"[bold yellow]ATFBS v2.1[/]  [grey]all the fucking bin scrapers[/]  [dim]by @thevirgindev[/]");
         AnsiConsole.MarkupLine($"[bold yellow]{sep}[/]");
         Console.WriteLine();
 
@@ -253,7 +253,7 @@ public class main
 
         var sb = new System.Text.StringBuilder();
         sb.AppendLine($"[bold yellow]{sep}[/]");
-        sb.AppendLine("[bold yellow]ATFBS v2.1[/]  [grey]all the fucking bin scrapers[/]  [darkgrey]by @thevirgindev[/]");
+        sb.AppendLine("[bold yellow]ATFBS v2.1[/]  [grey]all the fucking bin scrapers[/]  [dim]by @thevirgindev[/]");
         sb.AppendLine($"[bold yellow]{sep}[/]");
         sb.AppendLine("");
         sb.AppendLine("  [grey]commands:[/]");
@@ -434,7 +434,7 @@ public class main
         var panel = new Panel(layout)
             .Border(BoxBorder.Double)
             .BorderColor(Color.Yellow)
-            .Header("[bold yellow]ATFBS v2.1[/]  [darkgrey]by @thevirgindev[/]")
+            .Header("[bold yellow]ATFBS v2.1[/]  [dim]by @thevirgindev[/]")
             .Padding(1, 0);
         AnsiConsole.Write(panel);
     }
