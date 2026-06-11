@@ -1,0 +1,9 @@
+bin/
+obj/
+output/
+*.exe
+*.dll
+*.pdb
+*.runtimeconfig.json
+*.deps.json
+.phase_*
